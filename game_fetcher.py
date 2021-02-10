@@ -108,7 +108,8 @@ def format_match_info(account_id):
             assists = player["assists"]
 
     
-    print("account_id 为{}的小朋友在{}进行了一局时长为{}分{}秒的紧张刺激的游戏,结果{}了".format(account_id,start_time,minutes,seconds,win_or_lose))
+    report = "account_id 为{}的小朋友在{}进行了一局时长为{}分{}秒的紧张刺激的游戏,结果{}了".format(account_id,start_time,minutes,seconds,win_or_lose)
+    return report
 
 if __name__ == "__main__":
     format_match_info("104744847")

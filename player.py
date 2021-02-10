@@ -1,8 +1,10 @@
 class player:
+    '''
+    player intrinsic attributes
+    '''
     steam_id = 0
     nickname = ''
-    DOTA2_score = ''
-    last_DOTA2_match_ID = ''
+    last_match_id = ''
 
     kill = 0
     death = 0
@@ -16,10 +18,10 @@ class player:
     last_hit = 0
     damage = 0
 
-    def __init__(self, nickname, steam_id, last_DOTA2_match_ID):
+    def __init__(self, steam_id, nickname, last_match_id):
         self.nickname = nickname
-        self.short_id = steam_id
-        self.last_DOTA2_match_ID = last_DOTA2_match_ID
+        self.steam_id = steam_id
+        self.last_last_match_id = last_match_id
 
 
-PLAYER_LIST = []
+#PLAYER_LIST = []
